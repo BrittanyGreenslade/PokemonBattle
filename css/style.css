@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background: #f6e6bd;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  margin-top: 2%;
+}
+
+section:hover {
+  cursor: pointer;
+}
+
+h1 {
+  color: #315a7b;
+  font-size: 50px;
+  margin-bottom: 5%;
+}
+
+.optionsContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pokemonOption {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+img {
+  height: 300px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #315a7b;
+}
+/*# sourceMappingURL=style.css.map */

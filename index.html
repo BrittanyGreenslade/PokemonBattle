@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose your Pokémon</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="/images/pageTitle.png" alt="Pokémon title logo" />
+    </header>
+    <main>
+      <a href="/pages/secondPage.html">Pg 2</a>
+      <h1>Choose your Pokémon!</h1>
+      <section class="optionsContainer">
+        <div
+          class="pokemonOption"
+          id="pokemon1"
+          onclick="setPokemon(`Poliwhirl`)"
+        >
+          <img src="/images/Poliwhirl.gif" alt="Poliwhirl gif" />
+          <h2 class="pokemonName">Poliwhirl</h2>
+        </div>
+        <div
+          class="pokemonOption"
+          id="pokemon2"
+          onclick="setPokemon(`Jigglypuff`)"
+        >
+          <img src="/images/Jigglypuff.gif" alt="Jigglypuff gif" />
+          <h2 class="pokemonName">Jigglypuff</h2>
+        </div>
+        <div
+          class="pokemonOption"
+          id="pokemon3"
+          onclick="setPokemon(`Snorlax`)"
+        >
+          <img src="/images/Snorlax.gif" alt="Snorlax gif" />
+          <h2 class="pokemonName">Snorlax</h2>
+        </div>
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
