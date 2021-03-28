@@ -3,19 +3,65 @@
   padding: 0;
 }
 body {
-  background-image: url(/images/backgroundPic.jpg);
-  background-size: cover;
+  background-image: url(/images/backgroundPic2.jpg);
+  // object-fit: cover;
+  // background-position: cover;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100vh;
-  // display: grid;
+  display: grid;
   // place-items: center;
 }
 main {
+  // align-self: end;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80%;
+  height: 90%;
+  align-self: end;
 }
-#player,
-#computer {
-  height: 100%;
+section {
+  align-self: end;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  place-items: center;
+  height: 90%;
 }
+img {
+  height: 300px;
+}
+// #playerPkmContainer {
+//   height: 50px;
+// }
+#winContainer {
+  position: absolute;
+  left: 45%;
+}
+.pokemonContainer {
+  height: 350px;
+  width: 350px;
+  display: grid;
+  grid-template-rows: 85% 15%;
+  place-items: center;
+}
+// #enemyContainer {
+//   margin-top: 60px;
+// }
+// .healthBar {
+//   border: 1px solid black;
+//   padding: 10px;
+// }
+.attackButton {
+  display: grid;
+  place-items: center;
+  background: #c73136;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 30px;
+  width: 110px;
+  height: 50px;
+  &:hover {
+    background: #b8292e;
+    cursor: pointer;
+  }
+}
+

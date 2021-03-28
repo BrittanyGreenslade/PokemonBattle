@@ -9,10 +9,28 @@
   </head>
   <body>
     <a href="../index.html">Pg1</a>
-
     <main>
-      <section id="player"></section>
-      <section id="computer"></section>
+      <span id="winContainer"></span>
+      <section id="user">
+        <div>
+          <h2 id="healthPointsP1"></h2>
+          <!-- <div class="healthBar"></div> -->
+        </div>
+        <div class="pokemonContainer">
+          <div id="player"></div>
+          <h2 class="attackButton" onclick="takeTurn(`50`)">Attack</h2>
+        </div>
+      </section>
+      <section id=" ">
+        <div>
+          <h2 id="healthPointsP2"></h2>
+          <!-- <div class="healthBar"></div> -->
+        </div>
+        <div class="pokemonContainer">
+          <img src="/images/blissey.gif" alt="Blissey Pokemon" />
+          <div></div>
+        </div>
+      </section>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
     <script src="/js/app2.js"></script>

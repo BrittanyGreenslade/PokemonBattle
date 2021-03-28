@@ -11,6 +11,7 @@ main {
   display: grid;
   place-items: center;
   margin-top: 2%;
+  grid-template-rows: 0.5fr 2fr 1fr;
 }
 section {
   &:hover {
@@ -36,4 +37,7 @@ img {
 h2 {
   font-size: 30px;
   color: #315a7b;
+}
+#resume {
+  color: #735a20;
 }
