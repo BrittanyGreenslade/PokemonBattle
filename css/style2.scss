@@ -10,21 +10,45 @@ body {
   background-size: cover;
   height: 100vh;
   display: grid;
-  // place-items: center;
+  grid-template-rows: 1.25fr 3fr;
+  place-items: center;
+}
+header {
+  display: grid;
+  place-items: center;
+}
+.headerPic {
+  height: 20vh;
 }
 main {
-  // align-self: end;
+  align-self: end;
   display: grid;
+  place-items: center;
   grid-template-columns: 1fr 1fr;
   height: 90%;
-  align-self: end;
+  width: 100%;
+  // align-self: end;
+}
+a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #2f6fb9;
+  font-weight: bold;
+  background: #f1ca23;
+  border-radius: 10px;
+  width: 375px;
+  text-align: center;
+  box-shadow: 1px 1px 2px #fff;
+  margin-top: 20px;
 }
 section {
   align-self: end;
   display: grid;
-  grid-template-rows: 30% 70%;
-  place-items: center;
+  grid-template-rows: 20% 80%;
+  justify-items: center;
+  align-items: end;
   height: 90%;
+  width: 100%;
 }
 img {
   height: 300px;
@@ -37,11 +61,13 @@ img {
   left: 45%;
 }
 .pokemonContainer {
-  height: 350px;
+  height: 90%;
   width: 350px;
   display: grid;
-  grid-template-rows: 85% 15%;
+  grid-template-columns: 200px 1fr;
   place-items: center;
+  justify-self: start;
+  margin-left: 5%;
 }
 // #enemyContainer {
 //   margin-top: 60px;
@@ -50,18 +76,23 @@ img {
 //   border: 1px solid black;
 //   padding: 10px;
 // }
+.attackButtonsContainer {
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
+}
 .attackButton {
   display: grid;
   place-items: center;
   background: #c73136;
   border-radius: 5px;
   color: #fff;
-  font-size: 30px;
-  width: 110px;
-  height: 50px;
+  font-size: 22px;
+  width: 200px;
+  height: 70px;
+  text-align: center;
   &:hover {
     background: #b8292e;
     cursor: pointer;
   }
 }
-

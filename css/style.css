@@ -8,15 +8,15 @@ body {
   display: grid;
   place-items: center;
   background: #f6e6bd;
+  height: 100vh;
 }
 
 main {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  margin-top: 2%;
-  -ms-grid-rows: 0.5fr 2fr 1fr;
-      grid-template-rows: 0.5fr 2fr 1fr;
+  -ms-grid-rows: 0.25fr 1fr 0.25fr;
+      grid-template-rows: 0.25fr 1fr 0.25fr;
 }
 
 section:hover {
@@ -42,11 +42,16 @@ h1 {
   place-items: center;
 }
 
+.headerPic {
+  height: 30vh;
+}
+
 img {
   height: 300px;
 }
 
 h2 {
+  margin-top: 30px;
   font-size: 30px;
   color: #315a7b;
 }

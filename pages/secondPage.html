@@ -8,17 +8,35 @@
     <link rel="stylesheet" href="/css/style2.css" />
   </head>
   <body>
-    <a href="../index.html">Pg1</a>
+    <header>
+      <img
+        class="headerPic"
+        src="../images/battleTitle.png"
+        alt="Pokemon Advanced Battle Header"
+      />
+      <a href="../index.html">Choose a new player</a>
+    </header>
+    <div id="winContainer"></div>
     <main>
-      <span id="winContainer"></span>
       <section id="user">
         <div>
           <h2 id="healthPointsP1"></h2>
           <!-- <div class="healthBar"></div> -->
         </div>
         <div class="pokemonContainer">
+          <div class="attackButtonsContainer">
+            <h2 class="attackButton" onclick="takeTurn(`100`)">
+              Disarming Voice [100]
+            </h2>
+            <h2 class="attackButton" onclick="takeTurn(`70`)">
+              Heavy Slam [70]
+            </h2>
+            <h2 class="attackButton" onclick="takeTurn(`60`)">Covet [80]</h2>
+            <h2 class="attackButton" onclick="takeTurn(`190`)">
+              Let's Snuggle Forever [190]
+            </h2>
+          </div>
           <div id="player"></div>
-          <h2 class="attackButton" onclick="takeTurn(`50`)">Attack</h2>
         </div>
       </section>
       <section id=" ">
@@ -27,8 +45,8 @@
           <!-- <div class="healthBar"></div> -->
         </div>
         <div class="pokemonContainer">
-          <img src="/images/blissey.gif" alt="Blissey Pokemon" />
           <div></div>
+          <img src="/images/blissey.gif" alt="Blissey Pokemon" />
         </div>
       </section>
     </main>

@@ -10,16 +10,45 @@ body {
   height: 100vh;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1.25fr 3fr;
+      grid-template-rows: 1.25fr 3fr;
+  place-items: center;
+}
+
+header {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.headerPic {
+  height: 20vh;
 }
 
 main {
+  -ms-grid-row-align: end;
+      align-self: end;
   display: -ms-grid;
   display: grid;
+  place-items: center;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   height: 90%;
-  -ms-grid-row-align: end;
-      align-self: end;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #2f6fb9;
+  font-weight: bold;
+  background: #f1ca23;
+  border-radius: 10px;
+  width: 375px;
+  text-align: center;
+  -webkit-box-shadow: 1px 1px 2px #fff;
+          box-shadow: 1px 1px 2px #fff;
+  margin-top: 20px;
 }
 
 section {
@@ -27,10 +56,14 @@ section {
       align-self: end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 30% 70%;
-      grid-template-rows: 30% 70%;
-  place-items: center;
+  -ms-grid-rows: 20% 80%;
+      grid-template-rows: 20% 80%;
+  justify-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   height: 90%;
+  width: 100%;
 }
 
 img {
@@ -43,13 +76,23 @@ img {
 }
 
 .pokemonContainer {
-  height: 350px;
+  height: 90%;
   width: 350px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 85% 15%;
-      grid-template-rows: 85% 15%;
+  -ms-grid-columns: 200px 1fr;
+      grid-template-columns: 200px 1fr;
   place-items: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  margin-left: 5%;
+}
+
+.attackButtonsContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  row-gap: 10px;
 }
 
 .attackButton {
@@ -59,9 +102,10 @@ img {
   background: #c73136;
   border-radius: 5px;
   color: #fff;
-  font-size: 30px;
-  width: 110px;
-  height: 50px;
+  font-size: 22px;
+  width: 200px;
+  height: 70px;
+  text-align: center;
 }
 
 .attackButton:hover {
