@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +7,8 @@
 body {
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: 1fr 3fr;
+      grid-template-rows: 1fr 3fr;
   place-items: center;
   background: #f6e6bd;
   height: 100vh;
@@ -24,9 +27,10 @@ section:hover {
 }
 
 h1 {
+  font-family: "Press Start 2P", cursive;
   color: #315a7b;
-  font-size: 50px;
-  margin-bottom: 5%;
+  font-size: 30px;
+  margin-bottom: 8%;
 }
 
 .optionsContainer {
@@ -43,7 +47,7 @@ h1 {
 }
 
 .headerPic {
-  height: 30vh;
+  height: 20vh;
 }
 
 img {
@@ -51,12 +55,14 @@ img {
 }
 
 h2 {
+  font-family: "Press Start 2P", cursive;
   margin-top: 30px;
-  font-size: 30px;
+  font-size: 20px;
   color: #315a7b;
 }
 
 #resume {
+  margin-top: 10%;
   color: #735a20;
 }
 /*# sourceMappingURL=style.css.map */

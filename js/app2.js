@@ -1,5 +1,14 @@
 var getPokemon = Cookies.get("selection");
 var gameOver = false;
+var link = document.createElement("link");
+link.setAttribute(`rel`, `stylesheet`);
+link.setAttribute(`type`, `text/css`);
+link.setAttribute(
+  `href`,
+  `https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap`
+);
+document.head.appendChild(link);
+
 // if gameOver = false;
 // else
 //but need to check if game is over before this code runs
@@ -21,7 +30,16 @@ var userMaxHealth = Cookies.get("userMaxHealth", userMaxHealth);
 document.getElementById(
   `healthPointsP1`
 ).innerHTML = `<h3>Player 1 Health: ${userMaxHealth}</h3>`;
-
+//changed the styling of the health points
+var healthPts = document.getElementsByClassName("healthPts");
+for (var i = 0; i < healthPts.length; i++) {
+  healthPts[i].style.fontFamily = `'Press Start 2P', cursive`;
+  healthPts[i].style.fontSize = `20px`;
+  healthPts[i].style.color = `#2f6fb9`;
+  healthPts[i].style.background = `#ffffffbb`;
+  healthPts[i].style.padding = `10px 10px`;
+  healthPts[i].style.borderRadius = `10px`;
+}
 //stored the value of the cookies for current health in variables
 var compCurrentHealth = Cookies.get("compCurrentHealth");
 var userCurrentHealth = Cookies.get("userCurrentHealth");
@@ -50,11 +68,15 @@ function takeTurn(damage) {
   document.getElementById(
     "healthPointsP2"
   ).innerHTML = `<h3>Player 2 Health: ${compCurrentHealth}</h3>`;
-  document.getElementById("winContainer").style.left = `25%`;
-  document.getElementById("winContainer").style.top = `30vh`;
+  document.getElementById("winContainer").style.left = `0`;
+  document.getElementById("winContainer").style.color = `#f1ca23`;
+  document.getElementById("winContainer").style.top = `35vh`;
   document.getElementById("winContainer").style.textAlign = `center`;
-  document.getElementById("winContainer").style.fontSize = `50px`;
-  //is there a better way to style multiple things in JS all at once? This bothers me
+  document.getElementById(
+    "winContainer"
+  ).style.fontFamily = `'Press Start 2P', cursive`;
+  document.getElementById("winContainer").style.fontSize = `25px`;
+  //is there a better way to style multiple parts of the same element in JS all at once? This bothers me
   Cookies.set("newCompCrtHealth", compCurrentHealth);
   Cookies.set("newUsrCrtHealth", userCurrentHealth);
 }

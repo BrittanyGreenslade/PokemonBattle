@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ header {
 
 .headerPic {
   height: 20vh;
+  width: 500px;
 }
 
 main {
@@ -38,13 +40,16 @@ main {
 }
 
 a {
+  font-family: "Press Start 2P", cursive;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 20px;
   color: #2f6fb9;
   font-weight: bold;
   background: #f1ca23;
   border-radius: 10px;
-  width: 375px;
+  width: 450px;
+  height: 30px;
+  padding-top: 8px;
   text-align: center;
   -webkit-box-shadow: 1px 1px 2px #fff;
           box-shadow: 1px 1px 2px #fff;
@@ -56,18 +61,15 @@ section {
       align-self: end;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 20% 80%;
-      grid-template-rows: 20% 80%;
+  -ms-grid-rows: 15% 85%;
+      grid-template-rows: 15% 85%;
   justify-items: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
   height: 90%;
   width: 100%;
 }
 
 img {
-  height: 300px;
+  height: 350px;
 }
 
 #winContainer {
@@ -76,16 +78,24 @@ img {
 }
 
 .pokemonContainer {
-  height: 90%;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 200px 1fr;
-      grid-template-columns: 200px 1fr;
+  -ms-grid-columns: 250px 1fr;
+      grid-template-columns: 250px 1fr;
   place-items: center;
   -ms-grid-column-align: start;
       justify-self: start;
-  margin-left: 5%;
+  -ms-grid-row-align: end;
+      align-self: end;
+}
+
+#opponentContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 1fr;
+      grid-template-columns: 50px 1fr;
 }
 
 .attackButtonsContainer {
@@ -93,6 +103,7 @@ img {
   display: grid;
   place-items: center;
   row-gap: 10px;
+  margin-left: 10%;
 }
 
 .attackButton {
@@ -102,7 +113,7 @@ img {
   background: #c73136;
   border-radius: 5px;
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
   width: 200px;
   height: 70px;
   text-align: center;
@@ -111,5 +122,9 @@ img {
 .attackButton:hover {
   background: #b8292e;
   cursor: pointer;
+}
+
+#winContainer {
+  width: 100%;
 }
 /*# sourceMappingURL=style2.css.map */

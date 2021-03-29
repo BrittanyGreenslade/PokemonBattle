@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+$gameFont: "Press Start 2P", cursive;
 * {
   margin: 0;
   padding: 0;
@@ -19,6 +21,7 @@ header {
 }
 .headerPic {
   height: 20vh;
+  width: 500px;
 }
 main {
   align-self: end;
@@ -30,13 +33,16 @@ main {
   // align-self: end;
 }
 a {
+  font-family: $gameFont;
   text-decoration: none;
-  font-size: 40px;
+  font-size: 20px;
   color: #2f6fb9;
   font-weight: bold;
   background: #f1ca23;
   border-radius: 10px;
-  width: 375px;
+  width: 450px;
+  height: 30px;
+  padding-top: 8px;
   text-align: center;
   box-shadow: 1px 1px 2px #fff;
   margin-top: 20px;
@@ -44,14 +50,13 @@ a {
 section {
   align-self: end;
   display: grid;
-  grid-template-rows: 20% 80%;
+  grid-template-rows: 15% 85%;
   justify-items: center;
-  align-items: end;
   height: 90%;
   width: 100%;
 }
 img {
-  height: 300px;
+  height: 350px;
 }
 // #playerPkmContainer {
 //   height: 50px;
@@ -61,13 +66,17 @@ img {
   left: 45%;
 }
 .pokemonContainer {
-  height: 90%;
-  width: 350px;
+  height: 100%;
+  width: 100%;
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 250px 1fr;
   place-items: center;
   justify-self: start;
-  margin-left: 5%;
+  align-self: end;
+}
+#opponentContainer {
+  display: grid;
+  grid-template-columns: 50px 1fr;
 }
 // #enemyContainer {
 //   margin-top: 60px;
@@ -80,14 +89,16 @@ img {
   display: grid;
   place-items: center;
   row-gap: 10px;
+  margin-left: 10%;
 }
 .attackButton {
+  // font-family: $gameFont;
   display: grid;
   place-items: center;
   background: #c73136;
   border-radius: 5px;
   color: #fff;
-  font-size: 22px;
+  font-size: 25px;
   width: 200px;
   height: 70px;
   text-align: center;
@@ -95,4 +106,7 @@ img {
     background: #b8292e;
     cursor: pointer;
   }
+}
+#winContainer {
+  width: 100%;
 }
