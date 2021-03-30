@@ -1,13 +1,15 @@
+//collab with Shawn and talked to Mal once but wouldn't call it a collab
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 $gameFont: "Press Start 2P", cursive;
+.gameFont {
+  font-family: $gameFont;
+}
 * {
   margin: 0;
   padding: 0;
 }
 body {
   background-image: url(/images/backgroundPic2.jpg);
-  // object-fit: cover;
-  // background-position: cover;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -30,9 +32,9 @@ main {
   grid-template-columns: 1fr 1fr;
   height: 90%;
   width: 100%;
-  // align-self: end;
 }
-a {
+#newPlyr,
+#plyAgain {
   font-family: $gameFont;
   text-decoration: none;
   font-size: 20px;
@@ -47,24 +49,29 @@ a {
   box-shadow: 1px 1px 2px #fff;
   margin-top: 20px;
 }
+#plyAgain {
+  padding: 10px;
+  height: 35px;
+}
+#slakothPic {
+  width: 500px;
+}
+#mimikyuBusted {
+  height: 250px;
+}
 section {
   align-self: end;
   display: grid;
   grid-template-rows: 15% 85%;
   justify-items: center;
+  align-items: end;
   height: 90%;
   width: 100%;
 }
 img {
   height: 350px;
 }
-// #playerPkmContainer {
-//   height: 50px;
-// }
-#winContainer {
-  position: absolute;
-  left: 45%;
-}
+
 .pokemonContainer {
   height: 100%;
   width: 100%;
@@ -78,13 +85,7 @@ img {
   display: grid;
   grid-template-columns: 50px 1fr;
 }
-// #enemyContainer {
-//   margin-top: 60px;
-// }
-// .healthBar {
-//   border: 1px solid black;
-//   padding: 10px;
-// }
+
 .attackButtonsContainer {
   display: grid;
   place-items: center;
@@ -92,7 +93,6 @@ img {
   margin-left: 10%;
 }
 .attackButton {
-  // font-family: $gameFont;
   display: grid;
   place-items: center;
   background: #c73136;
@@ -107,6 +107,20 @@ img {
     cursor: pointer;
   }
 }
+.healthPts {
+  font-size: 20px;
+  color: #2f6fb9;
+  background: #ffffffbb;
+  padding: 10px 10px;
+  border-radius: 10px;
+}
 #winContainer {
+  position: absolute;
+  left: 45%;
+  font-size: 25px;
+  color: #f1ca23;
+  top: 30vh;
+  left: 0;
+  text-align: center;
   width: 100%;
 }

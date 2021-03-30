@@ -33,6 +33,10 @@ h1 {
   margin-bottom: 8%;
 }
 
+#slakothPic {
+  width: 500px;
+}
+
 .optionsContainer {
   display: -ms-grid;
   display: grid;
@@ -50,7 +54,7 @@ h1 {
   height: 20vh;
 }
 
-img {
+.pokemonImg {
   height: 300px;
 }
 
@@ -62,7 +66,10 @@ h2 {
 }
 
 #resume {
-  margin-top: 10%;
+  font-family: "Press Start 2P", cursive;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 5%;
   color: #735a20;
 }
 /*# sourceMappingURL=style.css.map */
